@@ -18,3 +18,8 @@ C6H8N2O2R2'             would yield true compared to:   A2C6H8N2O2'
 C4H7N2O3R(C2H2NOR)n'    would yield true compared to:   A2C6H9N3O4'
 
 C5H8N2O2'               would yield FALSE compared to:  A2C6H9N3O3'
+
+
+Example of use:
+
+python molecular_comparator.py -a 2 -b 3 --separator ";" -i example.csv  -o output.csv --keep-columns
