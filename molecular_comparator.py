@@ -1,9 +1,9 @@
-
 #!/usr/bin/env python
 import fileinput, sys, argparse
 from argparse import RawTextHelpFormatter
 
 '''
+This function normalizes the selected cell
 '''
 def normalize(string, ignore_list=list(")('n")):
 
