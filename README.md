@@ -8,6 +8,7 @@ Asumes numbers can have multiple digits. Asumes elements have ONLY one letter
 And if there is a letter without number, it assumes there is a "1" besides
 
 It ignores the following characters: ' ) ( n
+
 It replaces the letter A to R for the radical
 
 Examples:
