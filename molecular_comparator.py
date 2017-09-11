@@ -28,12 +28,11 @@ def normalize(string, ignore_list=list(")('n")):
             #check if the list "nbuffer" has something and if so, convert the digit letters to the corresponding number
             if len(nbuffer) > 0:
                 number = ''.join(nbuffer) #the join function joins the digit together ['1', '2'] => '12'
-                number = int(number)      #the int function converts the string to a number '12' => 12
+                number = int(number[::-1])      #the int function converts the string to a number '12' => 12
                 nbuffer = []              #reset the buffer to an empty list
             else:
                 number = 1                #if there is no number, then multiply by one
             groups.append(letter*number)  #append the "letter" repeated by "number" times
-
     #the string must finish (actually begin) with a non-digit letter
     groups = sorted(groups) #sort the groups of letters ['OO', 'CCC'] => ['CCC', 'OO']
     return ''.join(groups)  #join groups of letters into a string ['CCC', 'OO'] => 'CCCOO'
